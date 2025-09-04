@@ -5,7 +5,8 @@ const server = serve({
   routes: {
     "/": landingPage
   },
-  hostname: "0.0.0.0"
+  hostname: "0.0.0.0",
+  port: 443
 })
 
 console.log(`Listening on ${server.url}`)
