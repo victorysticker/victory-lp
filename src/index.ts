@@ -8,8 +8,8 @@ const server = serve({
   hostname: "0.0.0.0",
   port: 443,
   tls: {
-    cert: Bun.file("../../cert.pm"),
-    key: Bun.file("../../key.pm")
+    cert: Bun.file("../../cert.pem"),
+    key: Bun.file("../../key.pem")
   }
 })
 
