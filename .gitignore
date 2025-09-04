@@ -1,1 +1,5 @@
 node_modules
+
+# SSL/TLS Files
+cert.pem
+key.pem
