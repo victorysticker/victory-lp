@@ -1,8 +1,19 @@
 {
-  "dependencies": {
+  "name": "victory-lp",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun src/index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+    "dependencies": {
     "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
-    "bun-plugin-tailwind": "^0.0.15"
+    "bun-plugin-tailwind": "^0.0.15",
+    "@types/bun": "latest"
   }
 }
