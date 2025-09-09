@@ -1,9 +1,11 @@
 import { serve } from "bun";
-import landingPage from "./index.html";
+import ampPage from "./pages/amp.html";
+import landingPage from "./pages/index.html";
 
 const server = serve({
 	routes: {
 		"/": landingPage,
+		"/amp": ampPage,
 	},
 	development:
 		process.env.NODE_ENV === "development"

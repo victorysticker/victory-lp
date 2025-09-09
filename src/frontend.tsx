@@ -21,11 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			return;
 		}
 
-		window.location.href = "https://britbonglogpost.com";
+		window.location.href = "https://britbonglogpost.com/amp";
 		return;
 	}
-
-	window.location.href = "https://kakekhoki88.short.gy/Linkbaruina";
 });
 
 function isMobile() {
