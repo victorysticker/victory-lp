@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	if (isMobile()) {
 		if (
-			window.location.hostname === "britbonglogpost.com" ||
+			window.location.hostname.includes("britbonglogpost.com") ||
 			window.location.hostname === "localhost"
 		) {
 			return;
