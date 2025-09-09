@@ -1,3 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log(window.location.hostname)
-})
+	console.log({
+		domain: window.location.hostname,
+		referrer: document.referrer,
+		userAgent: navigator.userAgent,
+	});
+});
