@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	if (isMobile()) {
+		if (
+			window.location.hostname === "britbonglogpost.com" ||
+			window.location.hostname === "localhost"
+		) {
+			return;
+		}
+
 		window.location.href = "https://britbonglogpost.com";
 		return;
 	}
