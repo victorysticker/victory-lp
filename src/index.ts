@@ -12,6 +12,11 @@ const server = serve({
 				return new Response(file(ampFilePath));
 			},
 		},
+		"/amp/": {
+			GET() {
+				return new Response(file(ampFilePath));
+			},
+		},
 	},
 	development:
 		process.env.NODE_ENV === "development"
