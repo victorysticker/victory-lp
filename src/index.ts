@@ -1,11 +1,17 @@
-import { serve } from "bun";
-import ampPage from "./pages/amp.html";
+import { file, resolve, serve } from "bun";
+// import ampPage from "./pages/amp.html";
 import landingPage from "./pages/index.html";
+
+const ampFilePath = await resolve("./pages/amp.html", import.meta.dir);
 
 const server = serve({
 	routes: {
 		"/": landingPage,
-		"/amp": ampPage,
+		"/amp": {
+			GET() {
+				return new Response(file(ampFilePath));
+			},
+		},
 	},
 	development:
 		process.env.NODE_ENV === "development"
