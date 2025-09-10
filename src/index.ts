@@ -1,5 +1,4 @@
 import { file, resolve, serve } from "bun";
-// import ampPage from "./pages/amp.html";
 import landingPage from "./pages/index.html";
 
 const ampFilePath = await resolve("./pages/amp.html", import.meta.dir);
