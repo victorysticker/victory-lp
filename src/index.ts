@@ -1,7 +1,7 @@
 import { file, resolve, serve } from "bun";
-import landingPage from "./pages/index.html";
+import landingPage from "./pages/desktop/desktop.html";
 
-const ampFilePath = await resolve("./pages/amp.html", import.meta.dir);
+const ampFilePath = await resolve("./pages/amp/amp.html", import.meta.dir);
 
 const server = serve({
 	routes: {

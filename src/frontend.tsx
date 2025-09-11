@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	if (isMobile()) {
 		if (window.location.hostname === "localhost") {
-			window.location.href = '/amp'
+			window.location.href = "/amp";
 			return;
 		}
 
