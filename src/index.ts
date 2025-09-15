@@ -46,7 +46,7 @@ const server = serve({
 					return Response.redirect("https://britbonglogpost.com/amp");
 				}
 
-				return page
+				return page;
 			},
 		},
 		"/amp": {
