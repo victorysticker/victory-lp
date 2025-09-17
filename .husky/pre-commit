@@ -1,2 +1,4 @@
 # no test yet
 # bun test
+
+bun lint
